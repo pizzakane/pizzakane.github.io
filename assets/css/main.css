@@ -1,4 +1,9 @@
 @import url(font-awesome.min.css);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic|Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
 /*
@@ -1643,13 +1648,17 @@
 
 /* Type */
 
+	#pizza {
+	font-family: 'Indie Flower', cursive;
+	}
+
 	body {
 		background-color: #935d8c;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Poiret One', cursive;0-00
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -3354,6 +3363,36 @@
 
 /* Main */
 
+
+	.row1 {
+		display: table; 
+		width: 100%; /*Optional*/ 
+		table-layout: fixed; /*Optional*/ 
+		border-spacing: 10px; /*Optional*/
+	}
+
+	.column1 {
+		display: table-cell; 
+
+
+	}
+
+	.row2 {
+		display: table; 
+		width: 100%; /*Optional*/ 
+		table-layout: fixed; /*Optional*/ 
+		border-spacing: 10px; /*Optional*/
+	}
+
+	.column2 {
+		display: table-cell; 
+
+
+	}
+
+
+
+
 	#main {
 		background-color: #ffffff;
 		color: #636363;
@@ -3774,6 +3813,34 @@
 				padding: 2.5em 1em 0.5em 1em ;
 			}
 
+		}
+
+/* Contact */
+
+	#contact {
+		padding-bottom: 0;
+		overflow: hidden;
+	}
+
+		#contact .box {
+			-moz-transition: all 1s ease;
+			-webkit-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+			-moz-transform: translateZ(0);
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+			position: relative;
+			bottom: 0;
+		}
+
+		#contact.inactive .box {
+			bottom: -30em;
+		}
+
+		.box {
+			width: 100%;
 		}
 
 /* Wrapper */
